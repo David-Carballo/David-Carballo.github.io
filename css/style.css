@@ -361,9 +361,15 @@ footer{
     }
     .item{
         width: 60%;
-        margin: 40px 0;
+        margin: 10px 0;
         height: auto;
-        padding: 40px;
+        padding: 20px;
+    }
+    .item:hover{
+        width: 60%;
+        margin: 10px 0;
+        height: auto;
+        padding: 20px;
     }
     .img-me, .textos-about-me{
         grid-column: 1/-1;
@@ -375,7 +381,7 @@ footer{
     .projects{
         height: auto;
     }
-    .projects-codes, .projects-games{
+    .projects-codes, .projects-games, .projects-games:hover, .projects-codes:hover{
         width: 100%;
         height: auto;
     }
