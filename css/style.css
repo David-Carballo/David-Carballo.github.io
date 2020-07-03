@@ -392,6 +392,9 @@ footer{
     .text-skill i{
         font-size: 4vw;
     }
+    .text-skill img{
+        width: 90px;
+    }
     .text-skill h3{
         font-size: 4vw;
     }
