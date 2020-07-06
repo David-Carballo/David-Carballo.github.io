@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Carballo-Portfolio</title>
+    <title>David Carballo - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -348,23 +348,24 @@
         <section id="contact">
             <div class="contact-me">
                 <h2>Contact me</h2>
-                <form action="index.php" method="post">
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzNNd-knyXmlqIhpmRyLi6GLRccUrt6_A57VNuBZrUCon6sA/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe> -->
+                <form action="contact.php" method="post">
                     <div class="fields">
                         <div class="field half">
-                            <label for="name">Name</label>
-                            <input type="text" name="visitor_name" id="name" required/>
+                            <label for="nombre">Name</label>
+                            <input type="text" name="name" placeholder=" Tom Wood" required/>
                         </div>
                         <div class="field half">
                             <label for="email">Email</label>
-                            <input type="text" name="visitor_email" id="email" required/>
+                            <input type="text" name="email" placeholder =" mail@example.com" required/>
                         </div>
                         <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="visitor_message" id="message" rows="6" required></textarea>
+                            <label for="mansaje">Message</label>
+                            <textarea name="mensaje" rows="6" placeholder="Hello World!" required></textarea>
                         </div>
                     </div>
                     <ul class="actions">
-                        <li><input type="submit" value="Send" class="primary" /></li>
+                        <li><input type="submit" value="Enviar"/></li>
                     </ul>
                 </form>
             </div>
