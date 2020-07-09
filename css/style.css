@@ -44,10 +44,9 @@ p{
 /* HEADER */
 
 header{
-    height: 400px;
+    height: 300px;
     background-image: linear-gradient(120deg,#0a0430, #2b2844);
 }
-
 .img-hero{
     width: 100%;
     height: auto;
@@ -55,7 +54,7 @@ header{
 }
 .img{
     width: 95%;
-    max-width: 400px;
+    max-width: 300px;
 }
 .textos-hero{
     grid-column: 6/13;
@@ -63,7 +62,7 @@ header{
 }
 .textos-hero h1{
     font-family: 'Press Start 2P', cursive;
-    font-size: 45px;
+    font-size: 40px;
     padding-bottom: 10px;
 }
 .contact{
@@ -76,10 +75,35 @@ header{
     text-decoration: none;
 }
 
+.header-proj{
+    height: 60px;
+}
+.header-proj .grid{
+    background-color: #06021d;
+    width: 100%;
+}
+.items-proj{
+    
+    grid-column: 1/2;
+}
+.item-proj{
+    width: 25%;
+    height: 100%;
+    padding: 10px 20px;
+    text-align: center;
+}
+.header-proj [class^="fas fa"] {
+    color: #97DB3B;
+    font-size: 20px;
+}
+svg #text1 text.style{
+    fill: red;
+}
+
 /* MAIN - NavBar */
 
 .buttons{
-    height: 60px;
+    height: 50px;
     background: #231e4e;
 }
 .items{
@@ -104,10 +128,17 @@ header{
     text-align: center;
     background: #2e2a55;
 }
-
 .buttons [class^="fas fa"] {
     color: #97DB3B;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+/* MAIN - Projects title */
+
+.title-me{
+    padding: 10px 0;
+    height: auto;
+    background-color: #06021d;
 }
 
 /* MAIN - About me */
@@ -132,6 +163,10 @@ header{
     text-align: center;
     padding-left: 20px;
 }
+.textos-projects{
+    grid-column: 1/-1;
+    text-align: justify;
+}
 
 /* MAIN - Projects */
 
@@ -146,6 +181,7 @@ header{
     height: 300px;
     width: 50%;
     background-color: rgba(209, 113, 113, 0.4);
+    text-decoration: none;
 }
 .projects-codes:hover{
     height: 300px;
@@ -171,6 +207,7 @@ header{
     width: 50%;
     height: 300px;
     background-color: rgba(212, 187, 74, 0.4);
+    text-decoration: none;
 }
 .projects-games:hover{
     width: 50%;
@@ -193,6 +230,50 @@ header{
     line-height: 300px;
 }
 
+/* MAIN - Projects - Elements */
+.elements{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    border-style: solid none solid none;
+    border-width: 5px;
+}
+.element{
+    height: 200px;
+    width: 25%;
+    text-decoration: none;
+}
+.red{
+    background-color: rgba(209, 113, 113, 0.4);
+}
+.yellow{
+    background-color: rgba(208, 209, 113, 0.4);
+}
+.green{
+    background-color: rgba(128, 209, 113, 0.4);
+}
+.blue{
+    background-color: rgba(113, 155, 209, 0.4);
+}
+.element h2{
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+}
+.element img{
+    text-align: none;
+    border: 0;
+    height: 200px;
+    width: inherit;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+}
+.element:hover{
+    height: 200px;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0);
+}
 /* MAIN - Skills */
 
 .skills{
@@ -327,7 +408,7 @@ footer{
     font-size: 30px;
 }
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:600px) {
     header{
         height: auto;
     }
@@ -384,6 +465,18 @@ footer{
     .projects-codes, .projects-games, .projects-games:hover, .projects-codes:hover{
         width: 100%;
         height: auto;
+    }
+
+    .elements{
+        height: auto;
+    }
+    .element, .element:hover{
+        width: 100%;
+        height: auto;
+    }
+
+    .elements a h2{
+        font-size: 1em;
     }
 
     .text-skill{
