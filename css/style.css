@@ -46,10 +46,10 @@ p{
     header{
         height: auto;
     	width: 100%;
+	background-image: linear-gradient(120deg,#EEEEEE, #aaaaaa);
         padding-left: 100px;
         padding-top: 100px;
         padding: 100px;
-        background-image: linear-gradient(120deg,#EEEEEE, #aaaaaa);
     }
     .img{
         width: 95%;
