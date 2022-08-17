@@ -5,82 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Carballo - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header style="background-image: url('bg.png');">
-            <div class="textos-hero">
-                <h1 class="weight-400">David Carballo</h1>
-                <h2 class="weight-400">Software developer and Game programmer</h2>
-                <p class="parrafo">Computer Science student passionate about video games and technology. </p>
+        <!--
+    <header>
+        <nav class="navbar">
+            <ul>
+                <a href="#about-me" class="navbar-item">About</a>
+                <a href="#projects"class="navbar-item">Projects</a>
+                <a href="#skills" class="navbar-item">Skills</a>
+            </ul>
+            <!-- <div>
+                <a href="https://www.linkedin.com/in/david-carballodev/">
+                    <i class="fab fa-linkedin"style="color: blue;"></i>
+                </a>
             </div>
-            <button class="btn-primary" onclick="location.href='CarballoDavidCV.pdf'" type="button" download="CarballoDavidCV">R E S U M E</button>
+        </nav> 
     </header>
+        -->
+     <header>
+            <button class="btn-primary" onclick="location.href='CarballoDavidCV.pdf'" type="button" download="CarballoDavidCV">R E S U M E</button>
+    </header> 
 
     <main>
-        <section class="buttons">
-            <section class="grid">
-                <div class="items">
-                    <div class="item">
-                        <a href="#about-me" class="btn">
-                            <i class="fas fa"> About me</i>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#projects" class="btn">
-                            <i class="fas fa"> Projects</i>   
-                        </a>                     
-                    </div>
-                    <div class="item">
-                        <a href="#skills" class="btn">
-                            <i class="fas fa"> Skills</i>
-                        </a>
-                    </div>
-					<!--
-                    <div class="item">
-                        <a href="#contact" class="btn">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-					-->
-                </div>
-            </section>
+        <section id=title class="title">
+            <div class="title">
+                <h1> Hello! I'm <span>David Carballo<span> </h1>
+            </div>
         </section>
         <section id=about-me class="about-me">
             <div class="grid">
-                <div class="title-about-me">
-                    <h2 class="subtitle">About me</h2>
-                </div>
                 <div class="img-me">
-                    <img src="imgs/cv1.png" alt="" class="img">
+                    <img src="imgs/cv2.png" alt="" class="img">
                 </div>
                 <div class="textos-about-me">
                     <p class="parrafo" >
-                        My name is David and I am a 25 years old Computer Science's student in my last year
-                        at Facultat d'Informatica de Barcelona (UPC). I am ambitious to be challenged 
+                        I'm Informatics Engineering specialized in Computing based in Barcelona, Spain.
+                    </p>
+                    <p class="parrafo" >
+                        Capable of design complex computer systems that comply with critical efficiency, reliability and security.
+                    </p>
+                    <p class="parrafo" >
+                        Currently, I'm focused on new disruptive technologies about Artificial Intelligence like Computer Vision, Machine and Deep Learning and Graphics applications like XR/VR/AR, Videogames...
+                    </p>
+                    <p class="parrafo" >
+                        I am ambitious to be challenged 
                         in order to grow and further improve my programming knowledgment and skills.
-                        I am a positive and hardworking individual, 
-                        who always strives to achieve the highest quality possible, at any given task.
-                        I highlight three qualities that I think define me very well: organised, creative and helpful. 
                     </p>
                 </div>
-
             </div>
-
         </section>
         <section id=projects class="projects">
             <a href="projects.html" class="projects-codes">
                 <img src="imgs/code.png" alt="">
-                <h2>Projects</h2>
+                <h2>PROJECTS</h2>
             </a>
             <a href="games.html" class="projects-games">
                 <img src="imgs/HVcover.jpg" alt="">
-                <h2>Games</h2>
+                <h2>GAMES</h2>
             </a>
         </section>
         <section id=skills class="skills">
-            <h2>Coding skills</h2>
+            <h1>Coding skills</h1>
             <div class="text-skill">
                 <h2> C++ </h2>
                 <div class="stars">
@@ -132,6 +123,16 @@
                 </div>
             </div>
             <div class="text-skill">
+                <h2> Haskell </h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="text-skill">
                 <h2> HTML5 </h2>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -152,18 +153,28 @@
                 </div>
             </div>
             <div class="text-skill">
-                <h2> Haskell </h2>
+                <h2> Javascript </h2>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="text-skill">
+                <h2> React </h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
             </div>
         </section>
         <section id=skills class="skills">
-            <h2>Software skills</h2>
+            <h1>Software skills</h1>
             <div class="text-skill">
                 <h2> Unity 3D </h2>
                 <div class="stars">
@@ -226,7 +237,7 @@
             </div>
         </section>
         <section id=skills class="skills language">
-            <h2>Language skills</h2>
+            <h1>Language skills</h1>
             <div class="text-skill">
                 <h2> Spanish </h2>
                 <h3>Native</h3>
