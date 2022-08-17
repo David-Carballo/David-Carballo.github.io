@@ -13,7 +13,6 @@ opacity: 1;
 background-image: radial-gradient( ellipse farthest-corner at 13px 13px , #031b29, #031b29 50%, #011826 50%);
 background-size: 13px 13px;
     font-size: 20px;
-    -webkit-user-select: none;
 }
 
 p{
@@ -191,7 +190,6 @@ p{
     .title-me{
         padding: 10px 0;
         height: auto;
-        background-color: #ffffff;
     }
 
 /* MAIN - Title */
@@ -204,7 +202,7 @@ p{
 
     .title h1,span{
         -webkit-text-stroke: 1px white;
-        
+        -webkit-user-select: none;
         color: transparent; 
         text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.25);
     }
@@ -310,6 +308,8 @@ p{
 
 /* MAIN - Projects - Elements */
     .subtitle {
+        font-weight: 400;
+        letter-spacing: 10px;
         text-align: center;
         grid-column: 2/-2;
     }
@@ -321,9 +321,7 @@ p{
         margin: 0px;
         padding: 50px;
         border-style: solid none solid none;
-        border-width: 5px;
-        color: black;
-        background-color: white;
+        border-width: 2px;
     }
     .row{
         display: flex;
@@ -344,10 +342,16 @@ p{
         height: 200px;
     }
 
+    .elements p{
+        line-height: 2em;
+    }
+
     .elements h2{
+        font-weight: 400;
+        letter-spacing: 2px;
         border-width: 2px;
         border-style: solid none;
-        border-color: black;
+        border-color: white;
     }
 
 /* STYLE CLASSES */
