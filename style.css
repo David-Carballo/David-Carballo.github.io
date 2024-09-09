@@ -40,7 +40,7 @@ h4 {
     background-image: linear-gradient(to right, #57ab92 0%, #295d4a 110%);
     background-clip: text;
     color: transparent;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 600;
     line-height: 1em;
     text-align: center;
@@ -75,9 +75,7 @@ p {
 }
 
 .nav-bar h1{
-    background-image: linear-gradient(to right, #57ab92 0%, #295d4a 70%);
-    background-clip: text;
-    color: transparent;
+    color: #57ab92;
     font-size: 2.5em;
     padding: 10px 10px;
     padding-left: 20px;
@@ -142,7 +140,7 @@ header img{
 }
 
 .title h1:hover {
-    color: #295d4a;
+    color: #57ab92;
     transition: color 0.4s;
 }
 
@@ -157,6 +155,7 @@ header img{
 }
 
 #about-me p{
+    font-size: 1.68em;
     line-height: 2.5em;
     align-self: center;
 }
@@ -378,7 +377,7 @@ header img{
 #contact {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 40px;
     gap: 100px;
     position: relative;
     background: linear-gradient(60deg, rgba(41,93,81,1) 35%, rgba(28,48,25,1) 100%);
