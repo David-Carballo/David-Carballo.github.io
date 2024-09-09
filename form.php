@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['submit'])) {
     // Retrieve form data
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -10,11 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $mailheader = "From: ".$name."<".$email.">\r\n";
 
-    // Display the submitted data
-    echo "Name: " . $name . "<br>";
-    echo "Email: " . $email . "<br>";
-    echo "Message: " . $message . "<br>";
-
-    mail($to, $subject, $message, $mailheader);
+    if(mail($to, $subject, $message, $mailheader)){
+        echo"<h1>Sent Succesfully! Thank you!</h1>";
+    }
+    else "Something went wrong!"
 }
 ?>
