@@ -160,6 +160,26 @@ header img{
     align-self: center;
 }
 
+#resume-btn {
+    font-family: "Montserrat";
+    background-color: transparent;
+    border-radius: 5px;
+    border:#57ab92 2px solid;
+    height: 40px;
+    width: 200px;
+    color:#57ab92;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#resume-btn:hover{
+    color: #00c288;
+    border:#00c288 2px solid;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -424,6 +444,14 @@ header img{
 #contact form *{
     margin: 10px 0px;
 }
+
+#response{
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    top: -50px;
+}
+
 input, textarea {
     color: white;
     /* border: 0.5px white solid; */
